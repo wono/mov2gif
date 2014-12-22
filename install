@@ -1,0 +1,13 @@
+#!/bin/bash
+# gif-converter installation script
+# author: Wonho Lim
+
+# Note: the default path for the installation is /usr/bin/wtools. 
+#       Please add this path environment variable or replace this path
+#       with other path you want to install.
+        
+DEFAULT_PATH_TO_INSTALL="/usr/bin/wtools/"
+SCRIPT_TO_COPY="mov2gif"
+chmod u+x install &&\
+sudo cp -r $SCRIPT_TO_COPY $DEFAULT_PATH_TO_INSTALL &&\
+echo The installation completed.
