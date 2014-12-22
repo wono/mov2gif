@@ -1,0 +1,9 @@
+#!/bin/bash
+# ytmp3 defendecy-installation script.
+# author: Wonho Lim
+
+# Note: To install this script and successfully install the 
+#       defendecies, you need Homebrew (http://brew.sh).
+
+brew install ffmpeg
+brew install gifsicle
