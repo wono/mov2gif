@@ -1,0 +1,22 @@
+#!/bin/bash
+#mov2gif - a command line gif converter for osx
+#author: Wonho Lim
+
+#   ARG1: video file name without its extension (.mov) 
+
+DEFAULT_ANIMATION_DELAY="3"
+DEFAULT_IMAGE_SIZE="600x400"
+DEFAULT_MOVIE_EXTENSION="mov"
+
+TITLE=$1
+
+#original video file
+ORIGINAL="${TITLE}.${DEFAULT_MOVIE_EXTENSION}"
+
+#target gif file to convert
+TARGET="${TITLE}.gif"
+
+TITLE=$1
+
+ffmpeg -i $ORIGINAL -s $DEFAULT_IMAGE_SIZE -pix_fmt rgb8 -r 10 -f gif - | gifsicle --optimize=3 --delay=$DEFAULT_ANIMATION_DELAY > $TARGET
+
