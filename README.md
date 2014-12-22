@@ -1,7 +1,7 @@
 MovToGif
 ========
 
-MovToGif is OSX command line program converting from video file (.MOV) to image-animated file (.GIF) file. 
+MovToGif is OSX command line program converting from video (.MOV) file to image-animated (.GIF) file. 
 
 
 Defendencies
